@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Easy way to find a perfect property" />
+    <meta name="og:title" content="Real Estate | Landing Page" />
+    <meta
+      name="og:description"
+      content="Easy way to find a perfect property"
+    />
+    <meta name="og:type" content="website" />
+    <meta name="og:image" content="assets/images/Logo.svg" />
+    <meta name="og:url" content="https://realestate-landingpage.netlify.app/" />
+    <title>Real Estate | Landing Page</title>
+    <link rel="icon" href="assets/images/Logo.svg" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="dns-prefetch preconnect stylesheet"
+    />
+    <script src="assets/scripts/app.js" rel="dns-prefetch preconnect" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <img alt="Logo" src="assets/images/Logo.svg" class="navbar-logo" />
+        <img alt="menu" src="assets/images/menu.svg" class="menu" />
+        <div class="navbar-links">
+          <img alt="exit" src="assets/images/exit.svg" class="exit" />
+          <ul class="navbar-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Agents</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#" class="login">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="hero">
+      <div class="hero-content">
+        <h1>Easy way to find a perfect property</h1>
+        <p>
+          We provide a complete service for the sale, purchase or rental of real
+          estate.
+        </p>
+        <div class="search">
+          <ul class="search-tabs">
+            <li data-target="#rent" class="active rent">Rent</li>
+            <li data-target="#buy" class="buy">Buy</li>
+            <li data-target="#sell" class="sell">Sell</li>
+          </ul>
+          <form id="rent" class="visible">
+            <div class="search-1">
+              <label>Location</label>
+              <select name="location">
+                <option selected disabled hidden>Select Your City</option>
+                <option value="New York">New York</option>
+                <option value="Madrid">Madrid</option>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+              </select>
+            </div>
+            <div class="search-2">
+              <label>Rent Type</label>
+              <select name="property-type">
+                <option selected disabled hidden>Choose Property Type</option>
+                <option value="Bungalow">Bungalow</option>
+                <option value="Flat">Flat</option>
+                <option value="Mansion">Mansion</option>
+                <option value="Hut">Hut</option>
+              </select>
+            </div>
+            <div class="search-3">
+              <label>Rent Range</label>
+              <select name="price-range">
+                <option selected disabled hidden>Choose Price Range</option>
+                <option value="New York">$300+</option>
+                <option value="Madrid">$500+</option>
+                <option value="London">$700+</option>
+                <option value="Paris">$1000+</option>
+              </select>
+            </div>
+            <button><img alt="search" src="assets/images/search.svg" /></button>
+          </form>
+          <form id="buy">
+            <div class="search-1">
+              <label>Location</label>
+              <select name="location">
+                <option selected disabled hidden>Select Your City</option>
+                <option value="New York">New York</option>
+                <option value="Madrid">Madrid</option>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+              </select>
+            </div>
+            <div class="search-2">
+              <label>Buy Type</label>
+              <select name="property-type">
+                <option selected disabled hidden>Choose Property Type</option>
+                <option value="Bungalow">Bungalow</option>
+                <option value="Flat">Flat</option>
+                <option value="Mansion">Mansion</option>
+                <option value="Hut">Hut</option>
+              </select>
+            </div>
+            <div class="search-3">
+              <label>Buy Range</label>
+              <select name="price-range">
+                <option selected disabled hidden>Choose Price Range</option>
+                <option value="New York">$300+</option>
+                <option value="Madrid">$500+</option>
+                <option value="London">$700+</option>
+                <option value="Paris">$1000+</option>
+              </select>
+            </div>
+            <button><img alt="search" src="assets/images/search.svg" /></button>
+          </form>
+          <form id="sell">
+            <div class="search-1">
+              <label>Location</label>
+              <select name="location">
+                <option selected disabled hidden>Select Your City</option>
+                <option value="New York">New York</option>
+                <option value="Madrid">Madrid</option>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+              </select>
+            </div>
+            <div class="search-2">
+              <label>Sell Type</label>
+              <select name="property-type">
+                <option selected disabled hidden>Choose Property Type</option>
+                <option value="Bungalow">Bungalow</option>
+                <option value="Flat">Flat</option>
+                <option value="Mansion">Mansion</option>
+                <option value="Hut">Hut</option>
+              </select>
+            </div>
+            <div class="search-3">
+              <label>Sell Range</label>
+              <select name="price-range">
+                <option selected disabled hidden>Choose Price Range</option>
+                <option value="New York">$300+</option>
+                <option value="Madrid">$500+</option>
+                <option value="London">$700+</option>
+                <option value="Paris">$1000+</option>
+              </select>
+            </div>
+            <button><img alt="search" src="assets/images/search.svg" /></button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <section class="availability">
+      <div class="availability-content">
+        <h2>We are available in many well<span>-</span>known countries</h2>
+        <div class="countries" data-aos="fade-up">
+          <div class="country">
+            <p>America</p>
+            <img alt="america" src="assets/images/america.webp" />
+          </div>
+          <div class="country">
+            <p>Spain</p>
+            <img alt="spain" src="assets/images/spain.webp" />
+          </div>
+          <div class="country">
+            <p>London</p>
+            <img alt="london" src="assets/images/london.webp" />
+          </div>
+          <div class="country">
+            <p>France</p>
+            <img alt="france" src="assets/images/france.webp" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recently-added">
+      <div class="recently-added-content">
+        <div class="recently-head">
+          <h3>Recently Added</h3>
+          <a href="#" class="see-all">See all</a>
+        </div>
+        <div class="recently-items" data-aos="fade-up">
+          <div class="recently-item">
+            <img alt="" src="assets/images/rec.svg" />
+            <div class="recently-item-content">
+              <h4>153 West Street, Crows Nest</h4>
+              <div class="recently-item-content-details-top">
+                <p>10 Bedroom</p>
+                <p>150M</p>
+                <p>2 Garage</p>
+              </div>
+              <div class="recently-item-content-details-bottom">
+                <p>Posted by X Builder</p>
+                <p class="recently-item-price"><span>$</span>35,353</p>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item">
+            <img alt="" src="assets/images/rec.svg" />
+            <div class="recently-item-content">
+              <h4>153 West Street, Crows Nest</h4>
+              <div class="recently-item-content-details-top">
+                <p>10 Bedroom</p>
+                <p>150M</p>
+                <p>2 Garage</p>
+              </div>
+              <div class="recently-item-content-details-bottom">
+                <p>Posted by X Builder</p>
+                <p class="recently-item-price"><span>$</span>35,353</p>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item">
+            <img alt="" src="assets/images/rec.svg" />
+            <div class="recently-item-content">
+              <h4>153 West Street, Crows Nest</h4>
+              <div class="recently-item-content-details-top">
+                <p>10 Bedroom</p>
+                <p>150M</p>
+                <p>2 Garage</p>
+              </div>
+              <div class="recently-item-content-details-bottom">
+                <p>Posted by X Builder</p>
+                <p class="recently-item-price"><span>$</span>35,353</p>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item">
+            <img alt="" src="assets/images/rec.svg" />
+            <div class="recently-item-content">
+              <h4>153 West Street, Crows Nest</h4>
+              <div class="recently-item-content-details-top">
+                <p>10 Bedroom</p>
+                <p>150M</p>
+                <p>2 Garage</p>
+              </div>
+              <div class="recently-item-content-details-bottom">
+                <p>Posted by X Builder</p>
+                <p class="recently-item-price"><span>$</span>35,353</p>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item">
+            <img alt="" src="assets/images/rec.svg" />
+            <div class="recently-item-content">
+              <h4>153 West Street, Crows Nest</h4>
+              <div class="recently-item-content-details-top">
+                <p>10 Bedroom</p>
+                <p>150M</p>
+                <p>2 Garage</p>
+              </div>
+              <div class="recently-item-content-details-bottom">
+                <p>Posted by X Builder</p>
+                <p class="recently-item-price"><span>$</span>35,353</p>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item">
+            <img alt="" src="assets/images/rec.svg" />
+            <div class="recently-item-content">
+              <h4>153 West Street, Crows Nest</h4>
+              <div class="recently-item-content-details-top">
+                <p>10 Bedroom</p>
+                <p>150M</p>
+                <p>2 Garage</p>
+              </div>
+              <div class="recently-item-content-details-bottom">
+                <p>Posted by X Builder</p>
+                <p class="recently-item-price"><span>$</span>35,353</p>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item-hidden">
+            <img alt="" src="assets/images/rec.svg" />
+            <div class="recently-item-content">
+              <h4>153 West Street, Crows Nest</h4>
+              <div class="recently-item-content-details-top">
+                <p>10 Bedroom</p>
+                <p>150M</p>
+                <p>2 Garage</p>
+              </div>
+              <div class="recently-item-content-details-bottom">
+                <p>Posted by X Builder</p>
+                <p class="recently-item-price"><span>$</span>35,353</p>
+              </div>
+            </div>
+          </div>
+          <div class="recently-item-hidden">
+            <img alt="" src="assets/images/rec.svg" />
+            <div class="recently-item-content">
+              <h4>153 West Street, Crows Nest</h4>
+              <div class="recently-item-content-details-top">
+                <p>10 Bedroom</p>
+                <p>150M</p>
+                <p>2 Garage</p>
+              </div>
+              <div class="recently-item-content-details-bottom">
+                <p>Posted by X Builder</p>
+                <p class="recently-item-price"><span>$</span>35,353</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="find">
+      <div class="find-content">
+        <div class="find-content-details">
+          <h2 data-aos="fade-right">Find your best Real Estate</h2>
+          <p data-aos="fade-right">
+            We provide a complete service for the sale, purchase or rental of
+            real estate.
+          </p>
+          <a href="#" data-aos="fade">Contact Us</a>
+        </div>
+        <img alt="house" src="assets/images/house.webp" data-aos="fade-left" />
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-head">
+          <img alt="Logo" src="assets/images/Logo.svg" class="footer-logo" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi porro
+            quisquam laborum, sapiente similique nesciunt architecto tenetur!
+            Repellat culpa illum commodi vel, quidem hic unde! Iste est sequi
+            aut assumenda?
+          </p>
+          <div class="footer-media">
+            <a href="#">
+              <img alt="facebook" src="assets/images/facebook.svg" />
+            </a>
+            <a href="#">
+              <img alt="instagram" src="assets/images/instagram.svg" />
+            </a>
+            <a href="#"> <img alt="twitter" src="assets/images/twitter.svg" /> </a>
+            <a href="#">
+              <img alt="linkedin" src="assets/images/linkedin.svg" />
+            </a>
+          </div>
+          <p class="copyright">© 2021. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-1">
+            <h4>Take a tour</h4>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-2">
+            <h4>Our Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Agents</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Media</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-3">
+            <h4>Subscribe</h4>
+            <p>Subscribe to get latest property, blog news from us.</p>
+            <form class="footer-subscribe">
+              <input type="text" placeholder="Email Address" />
+              <button><img alt="arrow" src="assets/images/arrow.svg" /></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+      rel="dns-prefetch preconnect"
+    ></script>
+    <script>
+      AOS.init(), AOS.init({ duration: 1e3, once: !0 });
+    </script>
+  </body>
+</html>
