@@ -3,5 +3,3 @@
 - DOM Manipulation
 - Responsive Design 
 - Animations & Transitions
-
-http://realestate-landingpage.netlify.app/
